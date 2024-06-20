@@ -29,7 +29,6 @@ char insert[10000000 + 10000000 / 5][100];
 char query[10000000 + 10000000 / 5][100];
 
 
-unordered_map<string, int> unmp;
 
 #define testcycles 10
 
@@ -41,6 +40,7 @@ int main(int argc, char** argv)
         filename_stream = argv[1];
     }
 
+    unordered_map<string, int> unmp;
     unmp.clear();
     int val;
 
